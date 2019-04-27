@@ -1,0 +1,16 @@
+@startuml
+start
+
+:Bug found;
+
+if (in development?) then (yes)
+    :Fix bug;
+else (no)
+    :Write test;
+    :Fix bug;
+endif
+
+:Test;
+
+stop
+@enduml
